@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="search.css">
+  </head>
+  <body>
+    <div class="SearchBox">
+      <h1>Search For Books </h1>
+      <input id="searchBar" placeholder="Type here"/>
+      <select id="filterYear">
+        <option value="">All Years</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+      </select>
+      <select id="filterAuthor">
+        <option value="">All Authors</option>
+        <option value="J.K. Rowling">J.K. Rowling</option>
+        <option value="John G.Proakis and Dimitris G.Manolakis">John G.Proakis and Dimitris G.Manolakis</option>
+        <option value="Joshua Bloch">Joshua Bloch</option>
+      </select>
+    </div>
+     <div class="FlexContainer">
+    <div id="resultContainer" style="width:75%;overflow: scroll;height: 600px;border:2px solid crimson;">
+      <div id="root"></div>
+    </div>
+</div>
+    <script src="search.js"></script>
+  </body>
+</html>
